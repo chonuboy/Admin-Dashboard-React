@@ -40,6 +40,7 @@ const Add = (props) => {
                 <input type={column.type} placeholder={column.field} onChange={(e) => handleInput(e, index)} />
               </div>
             ))}
+            <button className="send" type="submit">Send</button>
         </form>
       </div>
     </div>
