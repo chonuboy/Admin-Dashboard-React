@@ -1,0 +1,24 @@
+.datatable{
+    background-color: white;
+}
+.MuiDataGrid-toolbarContainer{
+    flex-direction: row-reverse;
+}
+.del{
+    width:20px;
+    height:20px;
+    margin-top: 10px;
+    cursor:pointer;
+}
+.view_one{
+    margin-top: 10px;
+    width:20px;
+    height:20px;
+}
+.action{
+    display:flex;
+    align-items: center;
+    gap: 20px;
+    cursor:pointer;
+    justify-content: center;
+}

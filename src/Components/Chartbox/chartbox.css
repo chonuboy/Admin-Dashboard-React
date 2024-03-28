@@ -1,0 +1,47 @@
+.chartbox{
+    height: 100%;
+    display: flex;
+    font-size: 14px;
+    gap: 20px;
+    width: 100%;
+}
+.user_info{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+.user_title{
+    display: flex;
+    gap: 10px;
+    position: relative;
+}
+.user_title_data h1{
+    position: absolute;
+    top:2px;
+    right: 2px;
+}
+.view__data{
+    margin-bottom: 8px;
+}
+.texts{
+    display: flex;
+    flex-direction: column;
+}
+.percentage{
+    font-weight: bold;
+    font-size: 20px;
+}
+.chart_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 100%;
+}
+.chart{
+    height: 100%;
+    width: 100%;
+}
+.duration{
+    font-size: 14px;
+}

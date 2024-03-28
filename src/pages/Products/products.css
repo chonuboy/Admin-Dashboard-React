@@ -1,0 +1,15 @@
+.product_user{
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.info{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.product_btn{
+    margin-bottom: 18px;
+    padding:5px;
+}
