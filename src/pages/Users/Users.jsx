@@ -57,13 +57,26 @@ const Users = () => {
     },
   ];
 
-   const fetchData = async() => {
-    await axios.get("http://localhost:3001/api/user").then(function(res){
-      setRowData(res.data)
-    }).catch((err)=>{
-      console.log(err)
-    })
-  }
+  const fetchData = async () => {
+    try {
+      const response = await axios.get("http://localhost:3001/api/user");
+      setRowData(response.data);
+    } catch (error) {
+      if (error.response) {
+        // The request was made and the server responded with a status code
+        console.error("Server responded with status:", error.response.status);
+        console.error("Error data:", error.response.data);
+      } else if (error.request) {
+        // The request was made but no response was received
+        console.error("No response received:", error.request);
+      } else {
+        // Something else happened while setting up the request
+        console.error("Error setting up the request:", error.message);
+      }
+      console.error("Error config:", error.config);
+    }
+  };
+  
   useEffect(()=>{
     fetchData()
   },[rowData])
