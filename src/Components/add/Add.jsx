@@ -1,13 +1,14 @@
 import { useState } from "react";
 import "./add.css"
 import axios from "axios";
+import BASE_URL from "../../url";
 const Add = (props) => {
 
   const [formData, setFormData] = useState([])
 
 
   const handleInput = (e, index) => {
-    const { name, value } = e.target;
+    const { value } = e.target;
     const updatedData = { ...formData };
     updatedData[index] = { ...updatedData[index], value };
     setFormData(updatedData);
@@ -19,7 +20,7 @@ const Add = (props) => {
     postData();
   };
   const postData = async () => {
-    await axios.post(`http://localhost:3001/api/${props.slug}`, { formData })
+    await axios.post(`${BASE_URL}/api/${props.slug}`, { formData })
       .then(res => console.log(res))
       .catch(err => { console.log(err) })
   };

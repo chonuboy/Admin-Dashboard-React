@@ -3,21 +3,19 @@ import { DataGrid, GridToolbar } from "@mui/x-data-grid";
 import view from "./external-link.png"
 import del from "./delete.png"
 import axios from "axios";
+import BASE_URL from "../../url";
 import {Link} from 'react-router-dom'
-import { useEffect, useState } from "react";
 
 const DataTable = (props) => {
 
     
     const handleDelete=async (id)=>{
-        console.log("Deleted"+id)
         try{
-        await axios.delete(`http://localhost:3001/api/${props.slug}/delete/${id}`).then(()=>{console.log("Data Deleted...")})
+        await axios.delete(`${BASE_URL}/api/${props.slug}/delete/${id}`).then(()=>{console.log("Data Deleted...")})
         }
         catch(err){
             console.log(err)
         }
-
     }
 
     

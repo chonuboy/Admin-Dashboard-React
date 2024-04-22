@@ -4,6 +4,7 @@ import DataTable from '../../Components/DataTable/DataTable'
 import "./users.css"
 import user from "../../Components/DataTable/user.png"
 import Add from '../../Components/add/Add'
+import BASE_URL from '../../url';
 import { useState,useEffect } from 'react'
 const Users = () => {
   
@@ -59,7 +60,7 @@ const Users = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get("http://localhost:3001/api/user");
+      const response = await axios.get(`${BASE_URL}/api/user`);
       setRowData(response.data);
     } catch (error) {
       if (error.response) {

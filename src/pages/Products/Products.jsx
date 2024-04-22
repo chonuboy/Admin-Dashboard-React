@@ -2,6 +2,7 @@ import DataTable from '../../Components/DataTable/DataTable'
 import "./products.css"
 import user from "../../Components/DataTable/user.png"
 import Add from '../../Components/add/Add'
+import BASE_URL from '../../url'
 import { useState,useEffect } from 'react'
 import axios from 'axios'
 const Products = () => {
@@ -58,7 +59,7 @@ const Products = () => {
   ];
 
   const fetchData = async () => {
-    await axios.get("http://localhost:3001/api/product").then(function (res) {
+    await axios.get(`${BASE_URL}/api/product`).then(function (res) {
       setRowData(res.data)
     }).catch((err) => {
       console.log(err)
