@@ -52,13 +52,13 @@ export const menu=[
             {
                 id:3,
                 title:"Orders",
-                url:"/orders",
+                url:"/demo",
                 icon:orders,
             },
             {
                 id:4,
                 title:"Posts",
-                url:"/posts",
+                url:"/demo",
                 icon:post,
             },
             
@@ -70,25 +70,25 @@ export const menu=[
             {
                 id:1,
                 title:"Elements",
-                url:"/elements",
+                url:"/demo",
                 icon:elements,
             },
             {
                 id:2,
                 title:"Notes",
-                url:"/notes",
+                url:"/demo",
                 icon:notes,
             },
             {
                 id:3,
                 title:"Forms",
-                url:"/forms",
+                url:"/demo",
                 icon:form,
             },
             {
                 id:4,
                 title:"Calender",
-                url:"/calender",
+                url:"/demo",
                 icon:calender,
             }
         ]
@@ -99,13 +99,13 @@ export const menu=[
             {
                 id:1,
                 title:"Settings",
-                url:"/settings",
+                url:"/demo",
                 icon:setting,
             },
             {
                 id:2,
                 title:"Backups",
-                url:"/backup",
+                url:"/demo",
                 icon:backup,
             }           
         ]
@@ -116,13 +116,13 @@ export const menu=[
             {
                 id:1,
                 title:"Charts",
-                url:"/charts",
+                url:"/demo",
                 icon:chart,
             },
             {
                 id:2,
                 title:"Logs",
-                url:"/logs",
+                url:"/demo",
                 icon:logs,
             },
         ],

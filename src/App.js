@@ -4,10 +4,11 @@ import User from './pages/User/User';
 import Users from './pages/Users/Users';
 import Home from './pages/Home/Home';
 import Products from './pages/Products/Products';
+import Demo from './Demo';
 import Navbar from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
 import Menu from './Components/Menu/Menu';
-import { createBrowserRouter, RouterProvider, Route, Outlet } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider , Outlet } from 'react-router-dom';
 
 
 
@@ -55,7 +56,11 @@ function App() {
         {
           path: "users/:id",
           element: <User />
-        }
+        },
+        {
+          path: "demo",
+          element : <Demo/>
+        },
       ]
     }
   ])
